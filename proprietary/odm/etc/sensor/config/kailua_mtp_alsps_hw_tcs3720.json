@@ -1,0 +1,244 @@
+{
+  "config":
+  {
+    "hw_platform": ["MTP", "QRD"],
+    "soc_id": ["519"]
+  },
+  "alsps_hw_tcs3720":{
+    "owner": "sns_alsps",
+    ".key_config":{
+      "owner": "sns_alsps",
+      "is_als_dri":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "is_ps_dri":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "als_lb_algo":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "ps_hw_cali":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "ps_ir_algo":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "ps_dual_power":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "ps_far_gesture":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "als_row_coe":{ "type": "int", "ver": "0",
+        "data": "110"
+      },
+      "als_ud_buf_len":{ "type": "int", "ver": "0",
+        "data": "2"
+      },
+      "als_timer_ms":{ "type": "int", "ver": "0",
+        "data": "100"
+      },
+      "ps_timer_ms":{ "type": "int", "ver": "0",
+        "data": "80"
+      },
+      "pwm_freq":{"type": "int", "ver": "0",
+        "data": "360"
+      },
+      "ir_ratio":{"type": "int", "ver": "0",
+        "data": "10"
+      },
+      "lux_offset":{"type": "int", "ver": "0",
+        "data": "-900"
+      },
+      "lux_cut":{"type": "int", "ver": "0",
+        "data": "200"
+      },
+      "long_integ_ms":{"type": "int", "ver": "0",
+        "data": "50"
+      },
+      "ps_near_check_num":{"type": "int", "ver": "0",
+        "data": "2"
+      },
+      "ps_far_check_num":{"type": "int", "ver": "0",
+        "data": "1"
+      },
+      "algo_para_num":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "brl_thrd_num":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "c_ir_zero":{ "type": "int", "ver": "0",
+        "data": "4200"
+      }
+    },
+    ".hw_cfg":{
+      "owner": "sns_alsps",
+      "debug_mode":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "always_lb":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "use_asp1":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "h_ir_ratio":{ "type": "int", "ver": "0",
+        "data": "28"
+      }
+    },
+    ".reg":{
+      "owner": "sns_alsps",
+      "reg0":{ "type": "int", "ver": "0",
+        "data": "0xD9B0"
+      }
+    },
+    ".dynamic_cali":{
+      "owner": "sns_alsps",
+      ".dt":{
+        "owner": "sns_alsps",
+        "low_step":{ "type": "int", "ver": "0",
+          "data": "300"
+        },
+        "high_step":{ "type": "int", "ver": "0",
+          "data": "400"
+        },
+        "low_limit":{ "type": "int", "ver": "0",
+          "data": "400"
+        },
+        "high_limit":{ "type": "int", "ver": "0",
+          "data": "500"
+        },
+        "dirty_low_step":{ "type": "int", "ver": "0",
+          "data": "180"
+        },
+        "dirty_high_step":{ "type": "int", "ver": "0",
+          "data": "280"
+        },
+        "ps_dirty_limit":{ "type": "int", "ver": "0",
+          "data": "1800"
+        },
+        "ps_ir_limit":{ "type": "int", "ver": "0",
+          "data": "500"
+        },
+        "ps_adjust_min":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "ps_adjust_max":{ "type": "int", "ver": "0",
+          "data": "850"
+        },
+        "sampling_count":{ "type": "int", "ver": "0",
+          "data": "5"
+        },
+        "step_max":{ "type": "int", "ver": "0",
+          "data": "400"
+        },
+        "step_min":{ "type": "int", "ver": "0",
+          "data": "100"
+        },
+        "step_div":{ "type": "int", "ver": "0",
+          "data": "2000"
+        },
+        "anti_shake_delta":{ "type": "int", "ver": "0",
+          "data": "200"
+        }
+      },
+      ".dc":{
+        "owner": "sns_alsps",
+        "dynamic_cali_max":{ "type": "int", "ver": "0",
+          "data": "4000"
+        },
+        "raw2offset_radio":{ "type": "int", "ver": "0",
+          "data": "1000"
+        },
+        "offset_max":{ "type": "int", "ver": "0",
+          "data": "16000"
+        },
+        "offset_range_min":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "offset_range_max":{ "type": "int", "ver": "0",
+          "data": "16500"
+        },
+        "force_cali_limit":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "cali_jitter_limit":{ "type": "int", "ver": "0",
+          "data": "85"
+        },
+        "cal_offset_margin":{ "type": "int", "ver": "0",
+          "data": "4500"
+        },
+        "cali_over_zore_cnt":{ "type": "int", "ver": "0",
+          "data": "10"
+        },
+        "boot_cali_delta":{ "type": "int", "ver": "0",
+          "data": "85"
+        }
+      }
+    },
+    ".algo_para_0":{
+      "owner": "sns_alsps",
+      "gold_ch":{ "type": "str", "ver": "0",
+        "data": "42686, 20657, 8773, 65894, 28424, 22044, 11278, 56794"
+      },
+      "cct_reset_ch_golden":{ "type": "str", "ver": "0",
+        "data": "0.8325, 0.8386, 0.8009, 0.7744"
+      },
+      "sync_delay_us":{ "type": "str", "ver": "0",
+        "data": "640, 640, 640, 5700, 5700, 5700"
+      },
+      "lb_brl_thrd":{ "type": "str", "ver": "0",
+        "data": "1500"
+      },
+      "duty_cycle":{ "type": "str", "ver": "0",
+        "data": "4, 4"
+      },
+      "asp_mode":{ "type": "str", "ver": "0",
+        "data": "0, 1"
+      },
+      "double_integ":{ "type": "str", "ver": "0",
+        "data": "0, 1"
+      },
+      "integ_sync_us":{ "type": "str", "ver": "0",
+        "data": "0, 640"
+      },
+      "power_config":{ "type": "str", "ver": "0",
+        "data": "0, 68, 118, 71, 0, 58, 117, 70, 0, 68, 118, 71, 192, 230, 125, 78"
+      },
+      "lux_coef_SuperHir":{ "type": "str", "ver": "0",
+        "data": "0.0002, 0.00267, 0.008, 0.001485"
+      },
+      "matrix_1_lux_coef_Hir":{ "type": "str", "ver": "0",
+        "data": "-0.009824, 0.003417, -0.007692, 0.012008"
+      },
+      "matrix_1_lux_coef_Lir":{ "type": "str", "ver": "0",
+        "data": "-0.022308, -0.011131, -0.023418, 0.028825"
+      },
+      "matrix_1_cct_coef_Hir":{ "type": "str", "ver": "0",
+        "data": "-0.003924, 0.020712, -0.021959, 0.005291, -0.00585, 0.0275, -0.027691, 0.005577, -0.012273, 0.05806, -0.036731, 0.000488"
+      },
+      "matrix_1_cct_coef_Lir":{ "type": "str", "ver": "0",
+        "data": "-0.019142, -0.031645, -0.012377, 0.032797, -0.011841, -0.012577, -0.003443, 0.019863, -0.049472, -0.070107, 0.034333, 0.053965"
+      },
+      "matrix_1_black_frame_k":{ "type": "str", "ver": "0",
+        "data": "0, 0, 0, 0"
+      },
+      "matrix_2_lux_coef_Hir":{ "type": "str", "ver": "0",
+        "data": "-0.009824, 0.003417, -0.007692, 0.012008"
+      },
+      "matrix_2_lux_coef_Lir":{ "type": "str", "ver": "0",
+        "data": "-0.022308, -0.011131, -0.023418, 0.028825"
+      },
+      "matrix_2_cct_coef_Hir":{ "type": "str", "ver": "0",
+        "data": "-0.003924, 0.020712, -0.021959, 0.005291, -0.00585, 0.0275, -0.027691, 0.005577, -0.012273, 0.05806, -0.036731, 0.000488"
+      },
+      "matrix_2_cct_coef_Lir":{ "type": "str", "ver": "0",
+        "data": "-0.019142, -0.031645, -0.012377, 0.032797, -0.011841, -0.012577, -0.003443, 0.019863, -0.049472, -0.070107, 0.034333, 0.053965"
+      },
+      "matrix_2_double_integ_k":{ "type": "str", "ver": "0",
+        "data": "-0.00000000004274589000, 0.00000037802325000000, -0.00115126935000000000, 1.28267865660000000000, -0.00000000005784273000, 0.00000051844650000000, -0.00161280900000000000, 1.85811067035000000000, -0.00000000004061722500, 0.00000036736095000000, -0.00114376185000000000, 1.29363133845000000000, -0.00000000003332914000, 0.00000029942380000000, -0.00093338180000000000, 1.07882388250000000000"
+      }
+    }
+  }
+}

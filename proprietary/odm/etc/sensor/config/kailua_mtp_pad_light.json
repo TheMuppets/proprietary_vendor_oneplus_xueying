@@ -1,0 +1,138 @@
+{
+  "config":{
+    "hw_platform": ["MTP", "QRD"],
+    "soc_id": ["519"]
+  },
+  "pad_light":{
+    "owner": "sns_pad_light",
+    ".config":{
+      "owner": "sns_pad_light",
+      "is_dri":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "hw_id":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "res_idx":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "sync_stream":{ "type": "int", "ver": "0",
+        "data": "0"
+      }
+    }
+  },
+  "pad_light_platform":{
+    "owner": "sns_pad_light",
+    ".config":{
+      "owner": "sns_pad_light",
+      "bus_type":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "bus_instance":{ "type": "int", "ver": "0",
+        "data": "2"
+      },
+      "slave_config":{ "type": "int", "ver": "0",
+        "data": "73"
+      },
+      "min_bus_speed_khz":{ "type": "int", "ver": "0",
+        "data": "400"
+      },
+      "max_bus_speed_khz":{ "type": "int", "ver": "0",
+        "data": "400"
+      },
+      "reg_addr_type":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "dri_irq_num":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "irq_pull_type":{ "type": "int", "ver": "0",
+        "data": "2"
+      },
+      "irq_is_chip_pin":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "irq_drive_strength":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "irq_trigger_type":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "num_rail":{ "type": "int", "ver": "0",
+        "data": "2"
+      },
+      "rail_on_state":{ "type": "int", "ver": "0",
+        "data": "2"
+      },
+      "vdd_rail":{ "type": "str", "ver": "0",
+        "data": "/pmic/client/sensor_vdd"
+      },
+      "vddio_rail":{ "type": "str", "ver": "0",
+        "data": "/pmic/client/sensor_vddio"
+      },
+      "rigid_body_type":{ "type": "int", "ver": "0",
+        "data": "0"
+      }
+    },
+    ".boot_config":{
+      "owner": "sns_pad_light",
+      "sensors_type":{ "type": "int", "ver": "0",
+        "data": "0x05"
+      },
+      "device_id":{ "type": "int", "ver": "0",
+        "data": "0x02"
+      },
+      "debug_enable":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "position_type":{ "type": "int", "ver": "0",
+        "data": "0x02"
+      },
+      "change_rpt":{"type": "int", "ver": "0",
+        "data": "0"
+      }
+    },
+    ".als":{
+      "owner": "sns_pad_light",
+      ".fac_cal":{
+        "owner": "sns_pad_light",
+        "scale":{ "type": "flt", "ver": "0",
+          "data": "1000.0"
+        },
+        "bias":{ "type": "flt", "ver": "0",
+          "data": "0.0"
+        },
+        "row_coe":{ "type": "flt", "ver": "0",
+          "data": "110"
+        }
+      }
+    },
+    ".cct":{
+      "owner": "sns_pad_light",
+      ".fac_cal":{
+        "owner": "sns_pad_light",
+        "R_cali":{ "type": "flt", "ver": "0",
+          "data": "1000.0"
+        },
+        "G_cali":{ "type": "flt", "ver": "0",
+          "data": "1000.0"
+        },
+        "B_cali":{ "type": "flt", "ver": "0",
+          "data": "1000.0"
+        },
+        "C_cali":{ "type": "flt", "ver": "0",
+          "data": "1000.0"
+        },
+        "W_cali":{ "type": "flt", "ver": "0",
+          "data": "1000.0"
+        },
+        "ch6":{ "type": "flt", "ver": "0",
+          "data": "1000.0"
+        },
+        "clock_scale":{ "type": "flt", "ver": "0",
+          "data": "10000.0"
+        }
+      }
+    }
+  }
+}

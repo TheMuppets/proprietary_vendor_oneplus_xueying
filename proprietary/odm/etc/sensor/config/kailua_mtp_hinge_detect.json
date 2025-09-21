@@ -1,0 +1,192 @@
+{
+  "config":{
+    "hw_platform": ["MTP", "QRD"],
+    "soc_id": ["519"]
+  },
+  "hinge_detect_commom":{
+    "owner": "hinge_detect",
+    ".config":{
+      "owner": "hinge_detect",
+      "is_fold_hall":{ "type": "flt", "ver": "0",
+        "data": "1.0"
+      },
+      "is_angle_hall":{ "type": "flt", "ver": "0",
+        "data": "1.0"
+      },
+      "dev_fold_type":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "algo_config1":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "algo_config2":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "algo_config3":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "angle_fit_curve_axis":{ "type": "flt", "ver": "0",
+        "data": "3.0"
+      },
+      "angle_cali_num":{ "type": "flt", "ver": "0",
+        "data": "3.0"
+      },
+      "fold_cali_num":{ "type": "flt", "ver": "0",
+        "data": "3.0"
+      }
+    },
+    ".fold_angle":{
+      "owner": "hinge_detect",
+      "cali_type0":{ "type": "flt", "ver": "0",
+        "data": "180.0"
+      },
+      "cali_type1":{ "type": "flt", "ver": "0",
+        "data": "90.0"
+      },
+      "cali_type2":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "cali_type3":{ "type": "flt", "ver": "0",
+        "data": "-1.0"
+      },
+      "cali_th0_l":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "cali_th0_h":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "cali_th1_l":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "cali_th1_h":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "cali_th2_l":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "cali_th2_h":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "cali_th3_l":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "cali_th3_h":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      }
+    },
+    ".fold_state":{
+      "owner": "hinge_detect",
+      "cali_type0":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "cali_type1":{ "type": "flt", "ver": "0",
+        "data": "10.0"
+      },
+      "cali_type2":{ "type": "flt", "ver": "0",
+        "data": "180.0"
+      },
+      "cali_type3":{ "type": "flt", "ver": "0",
+        "data": "-1.0"
+      },
+      "cali_th0_l":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "cali_th0_h":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "cali_th1_l":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "cali_th1_h":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "cali_th2_l":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "cali_th2_h":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "cali_th3_l":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "cali_th3_h":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      }
+    }
+  },
+  "hinge_detect_platform":{
+    "owner": "hinge_detect",
+    ".config":{
+      "owner": "hinge_detect",
+      "para0":{ "type": "flt", "ver": "0",
+        "data": "0"
+      },
+      "para1":{ "type": "flt", "ver": "0",
+        "data": "0"
+      },
+      "para2":{ "type": "flt", "ver": "0",
+        "data": "0"
+      }
+    },
+    ".fold_angle":{
+      "owner": "hinge_detect",
+      ".fac_cal":{
+        "owner": "hinge_detect",
+        "cali_para0":{ "type": "flt", "ver": "0",
+          "data": "-1.0"
+        },
+        "cali_para1":{ "type": "flt", "ver": "0",
+          "data": "-1.0"
+        },
+        "cali_para2":{ "type": "flt", "ver": "0",
+          "data": "-1.0"
+        },
+        "cali_para3":{ "type": "flt", "ver": "0",
+          "data": "-1.0"
+        },
+        "cali_para4":{ "type": "flt", "ver": "0",
+          "data": "-1.0"
+        },
+        "cali_para5":{ "type": "flt", "ver": "0",
+          "data": "-1.0"
+        }
+      }
+    },
+    ".fold_state":{
+      "owner": "hinge_detect",
+      ".fac_cal":{
+        "owner": "hinge_detect",
+        "cali_para0":{ "type": "flt", "ver": "0",
+          "data": "-1.0"
+        },
+        "cali_para1":{ "type": "flt", "ver": "0",
+          "data": "-1.0"
+        },
+        "cali_para2":{ "type": "flt", "ver": "0",
+          "data": "-1.0"
+        },
+        "cali_para3":{ "type": "flt", "ver": "0",
+          "data": "-1.0"
+        },
+        "cali_para4":{ "type": "flt", "ver": "0",
+          "data": "-1.0"
+        },
+        "cali_para5":{ "type": "flt", "ver": "0",
+          "data": "-1.0"
+        }
+      }
+    },
+    ".feedback":{
+      "owner": "hinge_detect",
+      ".acc_block":{
+        "owner": "hinge_detect",
+        "main_acc_data":{ "type": "flt", "ver": "0",
+          "data": "0.0"
+        },
+        "sub_acc_data":{ "type": "flt", "ver": "0",
+          "data": "0.0"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "config":{
+    "hw_platform": ["MTP", "QRD"],
+    "soc_id": ["519", "530", "457"]
+  },
+  "ambiente_prox":{
+    "owner": "sns_ambiente_prox",
+    ".config":{
+      "owner": "sns_ambiente_prox",
+      "available":{ "type": "int", "ver": "0",
+        "data": "1"
+      }
+    }
+  }
+}

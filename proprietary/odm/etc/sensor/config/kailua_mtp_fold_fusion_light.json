@@ -1,0 +1,24 @@
+{
+  "config":{
+    "hw_platform": ["MTP", "QRD"],
+    "soc_id": ["519"]
+  },
+  "fold_fusion_light":{
+    "owner": "sns_fold_fusion_light",
+    ".config":{
+      "owner": "sns_fold_fusion_light",
+      "fold_type":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "pad_light_num":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "position_type":{ "type": "int", "ver": "0",
+        "data": "2"
+      },
+      "debug_enable":{ "type": "int", "ver": "0",
+        "data": "0"
+      }
+    }
+  }
+}

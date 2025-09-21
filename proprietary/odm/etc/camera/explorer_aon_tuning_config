@@ -1,0 +1,154 @@
+{
+	"sensor_name":"ov32c",
+	"aon_tuning_config":[
+	{
+		"darkTh": 40,
+		"brightTh": 80,
+		"frontLightTh": 200,
+		"backLightTh": 135,
+		"dyAdjTime": 150,
+		"stableDyAdjTime":150,
+		"roiValidTime": 800,
+		"sensorResCount": 6,
+		"darkAeSetp": 2,
+		"AEMaxladder": 10,
+		"defaultAeTable": 0,
+		"defaultAETargetTable": 1,
+		"InitAEparameter": [
+		{
+			"InitAEparameter0": {
+				"LineCount": "0x500",
+				"Gain": "0x6",
+				"DGain": "0x2"
+			},
+			"InitAEparameter1": {
+				"LineCount": "0x500",
+				"Gain": "0x6",
+				"DGain": "0x2"
+			},
+			"InitAEparameter2": {
+				"LineCount": "0x500",
+				"Gain": "0x6",
+				"DGain": "0x2"
+			},
+			"InitAEparameter3": {
+				"LineCount": "0x500",
+				"Gain": "0x6",
+				"DGain": "0x2"
+			},
+			"InitAEparameter4": {
+				"LineCount": "0x500",
+				"Gain": "0x6",
+				"DGain": "0x1"
+			},
+			"InitAEparameter5": {
+				"LineCount": "0x500",
+				"Gain": "0x6",
+				"DGain": "0x1"
+			}
+		}],
+		"InitAEtargetparameter": [
+		{
+		    "InitAEtargetparameter0": {
+				"upAeTarget": "0x48",
+				"downAeTarget": "0x38"
+			},
+			"InitAEtargetparameter1": {
+				"upAeTarget": "0x48",
+				"downAeTarget": "0x38"
+			},
+			"InitAEtargetparameter2": {
+				"upAeTarget": "0x48",
+				"downAeTarget": "0x38"
+			},
+			"InitAEtargetparameter3": {
+				"upAeTarget": "0x38",
+				"downAeTarget": "0x28"
+			},
+			"InitAEtargetparameter4": {
+				"upAeTarget": "0x48",
+				"downAeTarget": "0x38"
+			},
+			"InitAEtargetparameter5": {
+				"upAeTarget": "0x48",
+				"downAeTarget": "0x38"
+			}
+		}],
+		"AETuningTable":[
+		{
+			"AETuningTable0": {
+				"Gain": "0x1"
+			},
+			"AETuningTable1": {
+				"Gain": "0x2"
+			},
+			"AETuningTable2": {
+				"Gain": "0x3"
+			},
+		    "AETuningTable3": {
+				"Gain": "0x4"
+			},
+			"AETuningTable4": {
+				"Gain": "0x5"
+			},
+			"AETuningTable5": {
+				"Gain": "0x6"
+			},
+			"AETuningTable6": {
+				"Gain": "0x7"
+			},
+			"AETuningTable7": {
+				"Gain": "0x8"
+			},
+			"AETuningTable8": {
+				"Gain": "0x9"
+			},
+			"AETuningTable9": {
+				"Gain": "0x9"
+			}
+		}],
+		"AETargetTuningTable": [
+		{
+			"AETargetTuningTable0": {
+				"upAeTarget": "0x38",
+				"downAeTarget": "0x28"
+			},
+			"AETargetTuningTable1": {
+				"upAeTarget": "0x48",
+				"downAeTarget": "0x38"
+			},
+			"AETargetTuningTable2": {
+				"upAeTarget": "0x58",
+				"downAeTarget": "0x48"
+			},
+			"AETargetTuningTable3": {
+				"upAeTarget": "0x68",
+				"downAeTarget": "0x58"
+			},
+			"AETargetTuningTable4": {
+				"upAeTarget": "0x78",
+				"downAeTarget": "0x68"
+			},
+			"AETargetTuningTable5": {
+				"upAeTarget": "0x88",
+				"downAeTarget": "0x78"
+			},
+			"AETargetTuningTable6": {
+				"upAeTarget": "0x98",
+				"downAeTarget": "0x88"
+			},
+			"AETargetTuningTable7": {
+				"upAeTarget": "0xa8",
+				"downAeTarget": "0x98"
+			},
+			"AETargetTuningTable8": {
+				"upAeTarget": "0xb8",
+				"downAeTarget": "0xa8"
+			},
+			"AETargetTuningTable9": {
+				"upAeTarget": "0xc8",
+				"downAeTarget": "0xb8"
+			}
+		}]
+	}]
+}

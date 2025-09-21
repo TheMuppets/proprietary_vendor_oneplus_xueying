@@ -1,0 +1,487 @@
+{
+	"numberSensor": 2,
+	"aon_sensor0_config":[
+	{
+		"product": "xueying",
+		"version": "1.0",
+		"sensor_name":"sensor3",
+		"cameraid": 1,
+		"isp_config": [
+		{
+			"stream_type": "VGA",
+			"sensor_cfa_pattern": 0,
+			"bit_width": 8,
+			"bayer_order": 0,
+			"raw_size": {
+				"width": 820,
+				"height": 820
+			},
+			"crop_startx": 0,
+			"crop_starty": 0,
+			"crop_size": {
+				"width": 820,
+				"height": 820
+			},
+			"scale_size": {
+				"width": 410,
+				"height": 410
+			},
+			"digital_gain": {
+				"enable": 1,
+				"rgain": 4096,
+				"grgain": 4096,
+				"gbgain": 4096,
+				"bgain": 4096
+			}
+		},
+		{
+			"stream_type": "QVGA",
+			"sensor_cfa_pattern": 0,
+			"bit_width": 8,
+			"bayer_order": 0,
+			"raw_size": {
+				"width": 410,
+				"height": 410
+			},
+			"crop_startx": 0,
+			"crop_starty": 0,
+			"crop_size": {
+				"width": 410,
+				"height": 410
+			},
+			"scale_size": {
+				"width": 410,
+				"height": 410
+			},
+			"digital_gain": {
+				"enable": 1,
+				"rgain": 4096,
+				"grgain": 4096,
+				"gbgain": 4096,
+				"bgain": 4096
+			}
+		}],
+		"mipi_config": [
+		{
+			"stream_type": "VGA",
+			"sensor_param": {
+				"width": 816,
+				"height": 608,
+				"virtual_channel": {
+					"channel_0": 0,
+					"channel_1": 0,
+					"channel_2": 0
+				},
+				"date_type": "2a"
+			},
+			"data_path": {
+				"enable": 1,
+				"identity": 0,
+				"lane_num": 1,
+				"phy_mode": 0,
+				"data_rate": 737,
+				"pin_order": 0,
+				"idi": "10",
+				"idi_sw_op_mode": 0
+			},
+			"addr_mapping": {
+				"start_addr": "420000",
+				"frame_offset": "1000",
+				"padding_date": 0,
+				"frame_num": 1,
+				"transpose": 1,
+				"total_width": 832,
+				"total_height": 1024,
+				"repeat_mode": 1
+			}
+		},
+		{
+			"stream_type": "QVGA",
+			"sensor_param": {
+				"width": 408,
+				"height": 304,
+				"virtual_channel": {
+					"channel_0": 0,
+					"channel_1": 0,
+					"channel_2": 0
+				},
+				"date_type": "2a"
+			},
+			"data_path": {
+				"enable": 1,
+				"identity": 0,
+				"lane_num": 1,
+				"phy_mode": 0,
+				"data_rate": 737,
+				"pin_order": 0,
+				"idi": "10",
+				"idi_sw_op_mode": 0
+			},
+			"addr_mapping": {
+				"start_addr": "420000",
+				"frame_offset": "1000",
+				"padding_date": 0,
+				"frame_num": 1,
+				"transpose": 1,
+				"total_width": 416,
+				"total_height": 512,
+				"repeat_mode": 1
+			}
+		}],
+		"ai_model":[
+		{
+			"name": "detect_full",
+			"type": 0,
+			"version": "4.3.2",
+			"path": "explorer/npu_model/aon/aon_combine_lz4.bin",
+			"face_flag": 2,
+			"back_flag": 1,
+			"palm_flag": 0,
+			"score": {
+				"num": 3,
+				"size": 5760,
+				"scale": 0.07871238142251968,
+				"bias": 215,
+				"addr": "400000"
+			},
+			"wh": {
+				"num": 2,
+				"size": 3840,
+				"scale": 0.1334114670753479,
+				"bias": 38,
+				"addr": "401680"
+			},
+			"reg": {
+				"num": 2,
+				"size": 3840,
+				"scale": 0.007833856157958508,
+				"bias": 64,
+				"addr": "407080"
+			},
+			"ldmk": {
+				"num": 10,
+				"size": 19200,
+				"scale": 0.06260483711957932,
+				"bias": 112,
+				"addr": "402580"
+			},
+			"default_threshold": {
+				"palm": 82,
+				"back": 82,
+				"face": 82
+			}
+		},
+		{
+			"name": "detect_simple",
+			"type": 0,
+			"version": "5.0.2",
+			"path": "explorer/npu_model/aon/aon_combine_lz4_simple.bin",
+			"face_flag": 1,
+			"back_flag": 255,
+			"palm_flag": 0,
+			"score": {
+				"num": 2,
+				"size": 3840,
+				"scale": 0.0732390359044075,
+				"bias": 210,
+				"addr": "400000"
+			},
+			"wh": {
+				"num": 2,
+				"size": 3840,
+				"scale": 0.12112679332494736,
+				"bias": 18,
+				"addr": "400f00"
+			},
+			"reg": {
+				"num": 2,
+				"size": 3840,
+				"scale": 0.006929987575858831,
+				"bias": 66,
+				"addr": "406900"
+			},
+			"ldmk": {
+				"num": 10,
+				"size": 19200,
+				"scale": 0.07155369222164154,
+				"bias": 110,
+				"addr": "401e00"
+			},
+			"default_threshold": {
+				"palm": 82,
+				"back": 82,
+				"face": 82
+			}
+		},
+		{
+			"name": "gaze",
+			"type": 1,
+			"version": "1.7",
+			"path": "",
+			"leye_flag": 0,
+			"reye_flag": 1,
+			"leye": {
+				"scale": 0.003921568859368563,
+				"bias": -128
+			},
+			"reye": {
+				"scale": 0.003921568859368563,
+				"bias": -128
+			},
+			"ldmk": {
+				"scale": 0.0037238372024148703,
+				"bias": -128
+			},
+			"axis": {
+				"scale": 0.9510072469711304,
+				"bias": -85
+			}
+		}],
+		"IQ_config": {
+			"enable": 0,
+			"sensor_id": "0x3243"
+		}
+	}],
+	"aon_sensor1_config":[
+	{
+		"product": "xueying",
+		"version": "1.0",
+		"sensor_name":"sensor1",
+		"cameraid": 4,
+		"isp_config": [
+		{
+			"stream_type": "VGA",
+			"sensor_cfa_pattern": 0,
+			"bit_width": 8,
+			"bayer_order": 0,
+			"raw_size": {
+				"width": 820,
+				"height": 820
+			},
+			"crop_startx": 0,
+			"crop_starty": 0,
+			"crop_size": {
+				"width": 820,
+				"height": 820
+			},
+			"scale_size": {
+				"width": 410,
+				"height": 410
+			},
+			"digital_gain": {
+				"enable": 1,
+				"rgain": 4096,
+				"grgain": 4096,
+				"gbgain": 4096,
+				"bgain": 4096
+			}
+		},
+		{
+			"stream_type": "QVGA",
+			"sensor_cfa_pattern": 0,
+			"bit_width": 8,
+			"bayer_order": 0,
+			"raw_size": {
+				"width": 410,
+				"height": 410
+			},
+			"crop_startx": 0,
+			"crop_starty": 0,
+			"crop_size": {
+				"width": 410,
+				"height": 410
+			},
+			"scale_size": {
+				"width": 410,
+				"height": 410
+			},
+			"digital_gain": {
+				"enable": 1,
+				"rgain": 4096,
+				"grgain": 4096,
+				"gbgain": 4096,
+				"bgain": 4096
+			}
+		}],
+		"mipi_config": [
+		{
+			"stream_type": "VGA",
+			"sensor_param": {
+				"width": 816,
+				"height": 608,
+				"virtual_channel": {
+					"channel_0": 0,
+					"channel_1": 0,
+					"channel_2": 0
+				},
+				"date_type": "2a"
+			},
+			"data_path": {
+				"enable": 1,
+				"identity": 4,
+				"lane_num": 1,
+				"phy_mode": 0,
+				"data_rate": 737,
+				"pin_order": 0,
+				"idi": "10",
+				"idi_sw_op_mode": 0
+			},
+			"addr_mapping": {
+				"start_addr": "420000",
+				"frame_offset": "1000",
+				"padding_date": 0,
+				"frame_num": 1,
+				"transpose": 1,
+				"total_width": 832,
+				"total_height": 1024,
+				"repeat_mode": 1
+			}
+		},
+		{
+			"stream_type": "QVGA",
+			"sensor_param": {
+				"width": 408,
+				"height": 304,
+				"virtual_channel": {
+					"channel_0": 0,
+					"channel_1": 0,
+					"channel_2": 0
+				},
+				"date_type": "2a"
+			},
+			"data_path": {
+				"enable": 1,
+				"identity": 4,
+				"lane_num": 1,
+				"phy_mode": 0,
+				"data_rate": 737,
+				"pin_order": 0,
+				"idi": "10",
+				"idi_sw_op_mode": 0
+			},
+			"addr_mapping": {
+				"start_addr": "420000",
+				"frame_offset": "1000",
+				"padding_date": 0,
+				"frame_num": 1,
+				"transpose": 1,
+				"total_width": 416,
+				"total_height": 512,
+				"repeat_mode": 1
+			}
+		}],
+		"ai_model":[
+		{
+			"name": "detect_full",
+			"type": 0,
+			"version": "4.3.2",
+			"path": "explorer/npu_model/aon/aon_combine_lz4.bin",
+			"face_flag": 2,
+			"back_flag": 1,
+			"palm_flag": 0,
+			"score": {
+				"num": 3,
+				"size": 5760,
+				"scale": 0.07871238142251968,
+				"bias": 215,
+				"addr": "400000"
+			},
+			"wh": {
+				"num": 2,
+				"size": 3840,
+				"scale": 0.1334114670753479,
+				"bias": 38,
+				"addr": "401680"
+			},
+			"reg": {
+				"num": 2,
+				"size": 3840,
+				"scale": 0.007833856157958508,
+				"bias": 64,
+				"addr": "407080"
+			},
+			"ldmk": {
+				"num": 10,
+				"size": 19200,
+				"scale": 0.06260483711957932,
+				"bias": 112,
+				"addr": "402580"
+			},
+			"default_threshold": {
+				"palm": 82,
+				"back": 82,
+				"face": 82
+			}
+		},
+		{
+			"name": "detect_simple",
+			"type": 0,
+			"version": "5.0.2",
+			"path": "explorer/npu_model/aon/aon_combine_lz4_simple.bin",
+			"face_flag": 1,
+			"back_flag": 255,
+			"palm_flag": 0,
+			"score": {
+				"num": 2,
+				"size": 3840,
+				"scale": 0.0732390359044075,
+				"bias": 210,
+				"addr": "400000"
+			},
+			"wh": {
+				"num": 2,
+				"size": 3840,
+				"scale": 0.12112679332494736,
+				"bias": 18,
+				"addr": "400f00"
+			},
+			"reg": {
+				"num": 2,
+				"size": 3840,
+				"scale": 0.006929987575858831,
+				"bias": 66,
+				"addr": "406900"
+			},
+			"ldmk": {
+				"num": 10,
+				"size": 19200,
+				"scale": 0.07155369222164154,
+				"bias": 110,
+				"addr": "401e00"
+			},
+			"default_threshold": {
+				"palm": 82,
+				"back": 82,
+				"face": 82
+			}
+		},
+		{
+			"name": "gaze",
+			"type": 1,
+			"version": "1.7",
+			"path": "",
+			"leye_flag": 0,
+			"reye_flag": 1,
+			"leye": {
+				"scale": 0.003921568859368563,
+				"bias": -128
+			},
+			"reye": {
+				"scale": 0.003921568859368563,
+				"bias": -128
+			},
+			"ldmk": {
+				"scale": 0.0037238372024148703,
+				"bias": -128
+			},
+			"axis": {
+				"scale": 0.9510072469711304,
+				"bias": -85
+			}
+		}],
+		"IQ_config": {
+			"enable": 0,
+			"sensor_id": "0x3243"
+		}
+	}]
+}
