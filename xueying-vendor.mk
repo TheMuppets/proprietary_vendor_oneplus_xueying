@@ -1107,6 +1107,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/xueying/proprietary/odm/vendor/firmware/uff_spi.b07:$(TARGET_COPY_OUT_ODM)/vendor/firmware/uff_spi.b07 \
     vendor/oneplus/xueying/proprietary/odm/vendor/firmware/uff_spi.b08:$(TARGET_COPY_OUT_ODM)/vendor/firmware/uff_spi.b08 \
     vendor/oneplus/xueying/proprietary/odm/vendor/firmware/uff_spi.mdt:$(TARGET_COPY_OUT_ODM)/vendor/firmware/uff_spi.mdt \
+    vendor/oneplus/xueying/proprietary/product/etc/permissions/privapp-permissions-euiccgoogle.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-euiccgoogle.xml \
     vendor/oneplus/xueying/proprietary/vendor/etc/display/qdcm_calib_data_AC052_P_1_A0002_dsc_cmd_mode_panel.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_AC052_P_1_A0002_dsc_cmd_mode_panel.json \
     vendor/oneplus/xueying/proprietary/vendor/etc/display/qdcm_calib_data_AC052_P_3_A0003_dsc_cmd_mode_panel.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_AC052_P_3_A0003_dsc_cmd_mode_panel.json \
     vendor/oneplus/xueying/proprietary/vendor/etc/display/qdcm_calib_data_AC052_S_3_A0001_dsc_cmd_mode_panel.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_AC052_S_3_A0001_dsc_cmd_mode_panel.json \
@@ -1496,6 +1497,7 @@ PRODUCT_PACKAGES += \
     vendor.oplus.hardware.sendextcamcmd-V2-ndk \
     libtfadsp_sb5_0_rx \
     libtfadsp_sb5_0_tx \
+    EuiccGoogle \
     vendor.qti.camera.aon-impl-1.3.xml \
     vendor.qti.camera.postproc-impl.xml \
     vendor.qti.camera.provider.xml \
