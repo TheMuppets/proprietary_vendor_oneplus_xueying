@@ -1120,6 +1120,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/xueying/proprietary/vendor/etc/ltm_config_AC052_P_1_A0002_dsc_cmd_mode_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ltm_config_AC052_P_1_A0002_dsc_cmd_mode_panel.xml \
     vendor/oneplus/xueying/proprietary/vendor/etc/ltm_config_AC052_P_3_A0003_dsc_cmd_mode_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ltm_config_AC052_P_3_A0003_dsc_cmd_mode_panel.xml \
     vendor/oneplus/xueying/proprietary/vendor/etc/ltm_config_AC052_S_3_A0001_dsc_cmd_mode_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ltm_config_AC052_S_3_A0001_dsc_cmd_mode_panel.xml \
+    vendor/oneplus/xueying/proprietary/vendor/firmware/sn220u.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/sn220u.bin \
     vendor/oneplus/xueying/proprietary/vendor/lib64/camera/arcsoft_calibration_uw.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/arcsoft_calibration_uw.bin \
     vendor/oneplus/xueying/proprietary/vendor/lib64/camera/arcsoft_calibration_wt.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/arcsoft_calibration_wt.bin \
     vendor/oneplus/xueying/proprietary/vendor/lib64/camera/arcsoft_dc_calibration_t.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/arcsoft_dc_calibration_t.bin \
@@ -1292,7 +1293,6 @@ PRODUCT_PACKAGES += \
     libqsegnet \
     libqshcamera \
     libsfeShiftExtrapolation \
-    libsn220u_fw \
     libswregistrationalgo \
     libsynx \
     libtfestriping \
