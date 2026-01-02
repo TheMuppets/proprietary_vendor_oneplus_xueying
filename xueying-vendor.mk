@@ -972,7 +972,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/xueying/proprietary/vendor/etc/display_apollo_list_AC052_P_1_A0002_dsc_cmd_mode_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display_apollo_list_AC052_P_1_A0002_dsc_cmd_mode_panel.xml \
     vendor/oneplus/xueying/proprietary/vendor/etc/display_apollo_list_AC052_P_3_A0003_dsc_cmd_mode_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display_apollo_list_AC052_P_3_A0003_dsc_cmd_mode_panel.xml \
     vendor/oneplus/xueying/proprietary/vendor/etc/display_apollo_list_AC052_S_3_A0001_dsc_cmd_mode_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display_apollo_list_AC052_S_3_A0001_dsc_cmd_mode_panel.xml \
-    vendor/oneplus/xueying/proprietary/vendor/etc/displayconfig/display_layout_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_layout_configuration.xml \
     vendor/oneplus/xueying/proprietary/vendor/etc/init/vendor.qti.camera.provider-service_64.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.camera.provider-service_64.rc \
     vendor/oneplus/xueying/proprietary/vendor/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
     vendor/oneplus/xueying/proprietary/vendor/etc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf \
