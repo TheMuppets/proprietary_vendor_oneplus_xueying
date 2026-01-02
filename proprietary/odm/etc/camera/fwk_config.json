@@ -280,8 +280,44 @@
             "com.tencent.mm.plugin.recordvideo.activity.MMRecordUI"
         ]
     },
+    "com.camera.mix.camera": {
+        "resolutionFilterForNotAddSizeAPI1": [
+            "3168x1440",
+            "2772x1240",
+            "2484x1116",
+            "2560x1440",
+            "2404x1080"
+        ]
+    },
     "com.instagram.android": {
         "supportExplorerCameraMask": 3
+    },
+    "com.playfake.instafake.funsta": {
+        "needMatchPkgName": true,
+        "previewSizeForAPI1Width": 2160,
+        "previewSizeForAPI1Height": 1080,
+        "resolutionFilterForNotAddSizeAPI1": [
+            "1920x1080",
+            "1600x1200",
+            "1440x1080",
+            "1280x960",
+            "1024x768",
+            "720x540",
+            "640x480",
+            "320x240",
+            "2560x1920",
+            "1664x936",
+            "2560x1920",
+            "3840x2160",
+            "3280x1856",
+            "2560x1440",
+            "1920x1080",
+            "1280x720",
+            "640x360",
+            "3264x1836",
+            "1664x936",
+            "416x234"
+        ]
     },
     "com.tencent.zebra": {
         "previewSizeForAPI1Width": 1920,

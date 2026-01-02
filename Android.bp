@@ -7764,6 +7764,7 @@ cc_prebuilt_library_shared {
                 "libhidlbase",
                 "libAlgoProcess",
                 "libapsjpeg",
+                "libalog",
                 "libc++",
                 "libc",
                 "libm",
@@ -7812,6 +7813,7 @@ cc_prebuilt_library_shared {
                 "libselinux",
                 "libexif-jpeg-aps",
                 "libextendfile",
+                "libalog",
                 "libc++",
                 "libc",
                 "libm",
@@ -8261,6 +8263,7 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libutils",
                 "libPolarrRender",
+                "libalog",
                 "libc++",
                 "libc",
                 "libm",
@@ -8759,6 +8762,7 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libcutils",
                 "libutils",
+                "libalog",
                 "libc++",
                 "libc",
                 "libm",
@@ -9527,6 +9531,55 @@ cc_prebuilt_library_shared {
                 "libOpenCL",
                 "libc++_shared",
                 "liblog",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libalog",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libalog.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libalogencrypt",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libalogencrypt.so",
+            ],
+            shared_libs: [
+                "libc++",
                 "libc",
                 "libm",
                 "libdl",
@@ -10993,6 +11046,54 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libcreatebinForBaseretouch",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libcreatebinForBaseretouch.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcreatebinForFaceretouch",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libcreatebinForFaceretouch.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libcustomer_halalgovisual",
     owner: "oneplus",
     strip: {
@@ -11791,7 +11892,9 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/libsaveshaderbin.so",
             ],
             shared_libs: [
+                "libcreatebinForBaseretouch",
                 "libcreatebin",
+                "libcreatebinForFaceretouch",
                 "libGLESv3",
                 "libEGL",
                 "libdl",
@@ -11843,6 +11946,8 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/libsharebuffer_impl.so",
             ],
             shared_libs: [
+                "libdmabufheap",
+                "libnativewindow",
                 "libui",
                 "libutils",
                 "libcutils",

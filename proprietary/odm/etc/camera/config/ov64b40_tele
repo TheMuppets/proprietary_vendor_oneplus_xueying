@@ -93,6 +93,11 @@
 },
 
 {
+  "Key": "TURBO_MOON_DATA_TYPE",
+  "Value": "0"
+},
+
+{
   "Key": "NIGHT_SCENE_CAMERA_MODE_V7",
   "Value": "12313"
 },
@@ -3036,6 +3041,13 @@
   "Value": "1,1,0,0,0,0",
   "Comment": "enable or disable turboraw frameless of each sensorMode
               sensorMode: BINNING, IZOOM, 1DOL, 2DOL, IZOOM_2DOL,IZOOM_QBC"
+},
+
+{
+  "Key": "TURBO_MOON_SUPPORT_ZOOM_RECT",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "1"
 }
 
 ]

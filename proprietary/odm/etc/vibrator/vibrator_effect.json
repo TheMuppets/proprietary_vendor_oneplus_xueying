@@ -633,6 +633,11 @@
             "play_rate_hz" : 24000
          },
          {
+            "effect_file" : "/odm/etc/vibrator/815/def/effect_364.bin",
+            "effect_id" : 364,
+            "play_rate_hz" : 24000
+         },
+         {
             "effect_file" : "/odm/etc/vibrator/815/def/effect_365.bin",
             "effect_id" : 365,
             "play_rate_hz" : 24000
@@ -712,6 +717,11 @@
          {
             "effect_file" : "/odm/etc/vibrator/815/soft/effect_363.bin",
             "effect_id" : 363,
+            "play_rate_hz" : 24000
+         },
+         {
+            "effect_file" : "/odm/etc/vibrator/815/soft/effect_364.bin",
+            "effect_id" : 364,
             "play_rate_hz" : 24000
          }
       ]
