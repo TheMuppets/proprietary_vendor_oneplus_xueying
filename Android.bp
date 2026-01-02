@@ -12425,6 +12425,24 @@ cc_prebuilt_library_shared {
     device_specific: true,
 }
 
+prebuilt_rfsa {
+    name: "libtfadsp_sb5_0_rx",
+    filename: "libtfadsp_sb5_0_rx.so",
+    owner: "oneplus",
+    src: "proprietary/odm/lib/rfsa/adsp/libtfadsp_sb5_0_rx.so",
+    relative_install_path: "adsp",
+    device_specific: true,
+}
+
+prebuilt_rfsa {
+    name: "libtfadsp_sb5_0_tx",
+    filename: "libtfadsp_sb5_0_tx.so",
+    owner: "oneplus",
+    src: "proprietary/odm/lib/rfsa/adsp/libtfadsp_sb5_0_tx.so",
+    relative_install_path: "adsp",
+    device_specific: true,
+}
+
 prebuilt_etc_xml {
     name: "vendor.qti.camera.aon-impl-1.3.xml",
     owner: "oneplus",
