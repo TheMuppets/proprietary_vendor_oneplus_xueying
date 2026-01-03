@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (c) 2020-2021 ZEKU Technology(Shanghai) Corp., Ltd.
+    All Rights Reserved
+
+    Description: Explorer Hal Service vintf manifest
+
+    =============================== Revision History: ============================
+    <author>        <date>         <version>   <desc>
+    ==============================================================================
+    Chen Zhang      2021-09-02     1.0         Create this module
+-->
+<manifest version="1.0" type="device">
+    <hal format="hidl">
+        <name>vendor.zeku.hardware.explorer</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IMmsProvider</name>
+            <instance>mms/explorer</instance>
+        </interface>
+    </hal>
+</manifest>

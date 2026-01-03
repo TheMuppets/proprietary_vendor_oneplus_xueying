@@ -1,0 +1,48 @@
+# Explorer config
+on property:sys.boot_completed=1
+	chmod 0777 /sys/class/explorer/explorer_dev/explorer_sdio_boot
+	chmod 0777 /sys/module/firmware_class/parameters/path
+	mkdir /data/vendor/explorer 0770 cameraserver audio
+
+on post-fs
+	mkdir /mnt/vendor/persist/explorer 0770 cameraserver audio
+
+on property:debug.zeku.workmode=*
+    setprop vendor.zeku.workmode ${debug.zeku.workmode}
+
+on property:debug.camera.mode.select=*
+    setprop vendor.camera.mode.select ${debug.camera.mode.select}
+
+on property:debug.camera.previewdebug=*
+    setprop vendor.camera.previewdebug ${debug.camera.previewdebug}
+
+on property:debug.explorer.usecase=*
+    setprop vendor.explorer.usecase ${debug.explorer.usecase}
+
+on property:debug.camera.hdrMode=*
+    setprop vendor.camera.hdrMode ${debug.camera.hdrMode}
+
+on property:debug.camera.dolnum=*
+    setprop vendor.camera.dolnum ${debug.camera.dolnum}
+
+on property:debug.camera.sensor.dolnum=*
+    setprop vendor.camera.sensor.dolnum ${debug.camera.sensor.dolnum}
+
+on property:debug.zeku.exposcene=*
+    setprop vendor.zeku.exposcene ${debug.zeku.exposcene}
+
+service sltdaemon /system/bin/sltdaemon
+    class main
+    disabled
+    user root
+    group root system wakelock camera audio
+
+on property:sys.boot_completed=1 && property:ro.oplus.image.my_engineering.type=factory
+    write /sys/bus/platform/devices/998000.qcom,qup_uart/power/control "on"
+    stop console
+    start sltdaemon
+
+on property:debug.explorerlog.started=0
+
+
+on property:debug.explorerdump.started=0

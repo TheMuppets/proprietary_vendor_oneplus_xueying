@@ -823,6 +823,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/xueying/proprietary/odm/etc/camera/tonemap/tonemap_lut_9:$(TARGET_COPY_OUT_ODM)/etc/camera/tonemap/tonemap_lut_9 \
     vendor/oneplus/xueying/proprietary/odm/etc/camera/wide.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/wide.bin \
     vendor/oneplus/xueying/proprietary/odm/etc/init/android.hardware.secure_element@1.2-service-goodix.rc:$(TARGET_COPY_OUT_ODM)/etc/init/android.hardware.secure_element@1.2-service-goodix.rc \
+    vendor/oneplus/xueying/proprietary/odm/etc/init/hw/init.explorer.rc:$(TARGET_COPY_OUT_ODM)/etc/init/hw/init.explorer.rc \
     vendor/oneplus/xueying/proprietary/odm/etc/init/init.camera_process.rc:$(TARGET_COPY_OUT_ODM)/etc/init/init.camera_process.rc \
     vendor/oneplus/xueying/proprietary/odm/etc/init/init.camera_upate.rc:$(TARGET_COPY_OUT_ODM)/etc/init/init.camera_upate.rc \
     vendor/oneplus/xueying/proprietary/odm/etc/init/init.odm.camera.provider.override.rc:$(TARGET_COPY_OUT_ODM)/etc/init/init.odm.camera.provider.override.rc \
@@ -1031,6 +1032,129 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/xueying/proprietary/odm/etc/wifi/kiwi/bdwlan.b0i:$(TARGET_COPY_OUT_ODM)/etc/wifi/kiwi/bdwlan.b0i \
     vendor/oneplus/xueying/proprietary/odm/etc/wifi/kiwi/bdwlan.elf:$(TARGET_COPY_OUT_ODM)/etc/wifi/kiwi/bdwlan.elf \
     vendor/oneplus/xueying/proprietary/odm/etc/wifi/kiwi/regdb.bin:$(TARGET_COPY_OUT_ODM)/etc/wifi/kiwi/regdb.bin \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/ExplorerTunningBinConfig.config:$(TARGET_COPY_OUT_ODM)/firmware/explorer/ExplorerTunningBinConfig.config \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/TunedParam/exp.imx581_wide_4000x2252_Dolby.bin:$(TARGET_COPY_OUT_ODM)/firmware/explorer/TunedParam/exp.imx581_wide_4000x2252_Dolby.bin \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/TunedParam/exp.imx581_wide_4000x2252_NM.bin:$(TARGET_COPY_OUT_ODM)/firmware/explorer/TunedParam/exp.imx581_wide_4000x2252_NM.bin \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/TunedParam/exp.imx581_wide_4000x2252_SN.bin:$(TARGET_COPY_OUT_ODM)/firmware/explorer/TunedParam/exp.imx581_wide_4000x2252_SN.bin \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/TunedParam/exp.imx709_front_3280x2464_SN.bin:$(TARGET_COPY_OUT_ODM)/firmware/explorer/TunedParam/exp.imx709_front_3280x2464_SN.bin \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/TunedParam/exp.imx888_main_4000x2252_Dolby.bin:$(TARGET_COPY_OUT_ODM)/firmware/explorer/TunedParam/exp.imx888_main_4000x2252_Dolby.bin \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/TunedParam/exp.imx888_main_4000x2252_NM.bin:$(TARGET_COPY_OUT_ODM)/firmware/explorer/TunedParam/exp.imx888_main_4000x2252_NM.bin \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/TunedParam/exp.imx888_main_4000x2252_SN.bin:$(TARGET_COPY_OUT_ODM)/firmware/explorer/TunedParam/exp.imx888_main_4000x2252_SN.bin \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/TunedParam/exp.imx888_main_4000x2252_wechat.bin:$(TARGET_COPY_OUT_ODM)/firmware/explorer/TunedParam/exp.imx888_main_4000x2252_wechat.bin \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/TunedParam/exp.imx890_tele_4096x2304_NM.bin:$(TARGET_COPY_OUT_ODM)/firmware/explorer/TunedParam/exp.imx890_tele_4096x2304_NM.bin \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/TunedParam/exp.imx890_tele_4096x2304_SN.bin:$(TARGET_COPY_OUT_ODM)/firmware/explorer/TunedParam/exp.imx890_tele_4096x2304_SN.bin \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/TunedParam/exp.imx890_wide_4096x2304_Dolby.bin:$(TARGET_COPY_OUT_ODM)/firmware/explorer/TunedParam/exp.imx890_wide_4096x2304_Dolby.bin \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/TunedParam/exp.imx890_wide_4096x2304_NM.bin:$(TARGET_COPY_OUT_ODM)/firmware/explorer/TunedParam/exp.imx890_wide_4096x2304_NM.bin \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/TunedParam/exp.imx890_wide_4096x2304_SN.bin:$(TARGET_COPY_OUT_ODM)/firmware/explorer/TunedParam/exp.imx890_wide_4096x2304_SN.bin \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/TunedParam/exp.imx989_main_4096x2304_Dolby.bin:$(TARGET_COPY_OUT_ODM)/firmware/explorer/TunedParam/exp.imx989_main_4096x2304_Dolby.bin \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/TunedParam/exp.imx989_main_4096x2304_NM.bin:$(TARGET_COPY_OUT_ODM)/firmware/explorer/TunedParam/exp.imx989_main_4096x2304_NM.bin \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/TunedParam/exp.imx989_main_4096x2304_SN.bin:$(TARGET_COPY_OUT_ODM)/firmware/explorer/TunedParam/exp.imx989_main_4096x2304_SN.bin \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/TunedParam/exp.imx989_main_4096x2304_wechat.bin:$(TARGET_COPY_OUT_ODM)/firmware/explorer/TunedParam/exp.imx989_main_4096x2304_wechat.bin \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/TunedParam/exp.ov32c_front_3264x2448_NM.bin:$(TARGET_COPY_OUT_ODM)/firmware/explorer/TunedParam/exp.ov32c_front_3264x2448_NM.bin \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/TunedParam/exp.ov32c_sub_front_3264x2448_NM.bin:$(TARGET_COPY_OUT_ODM)/firmware/explorer/TunedParam/exp.ov32c_sub_front_3264x2448_NM.bin \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/TunedParam/exp.ov64b40_tele_4624x2600_NM.bin:$(TARGET_COPY_OUT_ODM)/firmware/explorer/TunedParam/exp.ov64b40_tele_4624x2600_NM.bin \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/TunedParam/exp.ov64b40_tele_4624x2600_SN.bin:$(TARGET_COPY_OUT_ODM)/firmware/explorer/TunedParam/exp.ov64b40_tele_4624x2600_SN.bin \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/bootrom.bin:$(TARGET_COPY_OUT_ODM)/firmware/explorer/bootrom.bin \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/ddr_first.bin:$(TARGET_COPY_OUT_ODM)/firmware/explorer/ddr_first.bin \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/ddr_quick.bin:$(TARGET_COPY_OUT_ODM)/firmware/explorer/ddr_quick.bin \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/npu_model/aon/aon_combine_lz4.bin:$(TARGET_COPY_OUT_ODM)/firmware/explorer/npu_model/aon/aon_combine_lz4.bin \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/npu_model/aon/aon_combine_lz4_simple.bin:$(TARGET_COPY_OUT_ODM)/firmware/explorer/npu_model/aon/aon_combine_lz4_simple.bin \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/npu_model/sec_0V64B-tele.lz4:$(TARGET_COPY_OUT_ODM)/firmware/explorer/npu_model/sec_0V64B-tele.lz4 \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/npu_model/sec_0V64B-tele_header.lz4:$(TARGET_COPY_OUT_ODM)/firmware/explorer/npu_model/sec_0V64B-tele_header.lz4 \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/npu_model/sec_combination_all.lz4:$(TARGET_COPY_OUT_ODM)/firmware/explorer/npu_model/sec_combination_all.lz4 \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/npu_model/sec_combination_multiweights_all.lz4:$(TARGET_COPY_OUT_ODM)/firmware/explorer/npu_model/sec_combination_multiweights_all.lz4 \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/npu_model/sec_imx581-uw.lz4:$(TARGET_COPY_OUT_ODM)/firmware/explorer/npu_model/sec_imx581-uw.lz4 \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/npu_model/sec_imx581-uw_header.lz4:$(TARGET_COPY_OUT_ODM)/firmware/explorer/npu_model/sec_imx581-uw_header.lz4 \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/npu_model/sec_imx709-front.lz4:$(TARGET_COPY_OUT_ODM)/firmware/explorer/npu_model/sec_imx709-front.lz4 \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/npu_model/sec_imx709-front_header.lz4:$(TARGET_COPY_OUT_ODM)/firmware/explorer/npu_model/sec_imx709-front_header.lz4 \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/npu_model/sec_imx888-main.lz4:$(TARGET_COPY_OUT_ODM)/firmware/explorer/npu_model/sec_imx888-main.lz4 \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/npu_model/sec_imx888-main_header.lz4:$(TARGET_COPY_OUT_ODM)/firmware/explorer/npu_model/sec_imx888-main_header.lz4 \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/npu_model/sec_model_header.lz4:$(TARGET_COPY_OUT_ODM)/firmware/explorer/npu_model/sec_model_header.lz4 \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/npu_model/sec_ov32c-front.lz4:$(TARGET_COPY_OUT_ODM)/firmware/explorer/npu_model/sec_ov32c-front.lz4 \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/npu_model/sec_ov32c-front_header.lz4:$(TARGET_COPY_OUT_ODM)/firmware/explorer/npu_model/sec_ov32c-front_header.lz4 \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/npu_model/sec_ov32c_sub-front.lz4:$(TARGET_COPY_OUT_ODM)/firmware/explorer/npu_model/sec_ov32c_sub-front.lz4 \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/npu_model/sec_ov32c_sub-front_header.lz4:$(TARGET_COPY_OUT_ODM)/firmware/explorer/npu_model/sec_ov32c_sub-front_header.lz4 \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/npu_model/sec_size.lz4:$(TARGET_COPY_OUT_ODM)/firmware/explorer/npu_model/sec_size.lz4 \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/npu_model/sec_sz_imx581-uw_imx888-main_0V64B-tele.lz4:$(TARGET_COPY_OUT_ODM)/firmware/explorer/npu_model/sec_sz_imx581-uw_imx888-main_0V64B-tele.lz4 \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/npu_model/sec_sz_imx709-front.lz4:$(TARGET_COPY_OUT_ODM)/firmware/explorer/npu_model/sec_sz_imx709-front.lz4 \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/npu_model/sec_sz_ov32c-front.lz4:$(TARGET_COPY_OUT_ODM)/firmware/explorer/npu_model/sec_sz_ov32c-front.lz4 \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/npu_model/sec_sz_ov32c_sub_front.lz4:$(TARGET_COPY_OUT_ODM)/firmware/explorer/npu_model/sec_sz_ov32c_sub_front.lz4 \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/pbl_prov.bin:$(TARGET_COPY_OUT_ODM)/firmware/explorer/pbl_prov.bin \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/rtttest:$(TARGET_COPY_OUT_ODM)/firmware/explorer/rtttest \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/se_fw.bin:$(TARGET_COPY_OUT_ODM)/firmware/explorer/se_fw.bin \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/se_header.bin:$(TARGET_COPY_OUT_ODM)/firmware/explorer/se_header.bin \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/sec_pbl.bin:$(TARGET_COPY_OUT_ODM)/firmware/explorer/sec_pbl.bin \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/sec_pbl_MIPI_BP.bin:$(TARGET_COPY_OUT_ODM)/firmware/explorer/sec_pbl_MIPI_BP.bin \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/sec_pbl_prov.bin:$(TARGET_COPY_OUT_ODM)/firmware/explorer/sec_pbl_prov.bin \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/sec_pilot.bin:$(TARGET_COPY_OUT_ODM)/firmware/explorer/sec_pilot.bin \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/sec_rtthread.bin:$(TARGET_COPY_OUT_ODM)/firmware/explorer/sec_rtthread.bin \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/sec_rtthread_aon.bin:$(TARGET_COPY_OUT_ODM)/firmware/explorer/sec_rtthread_aon.bin \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/sec_rtthread_nopm.bin:$(TARGET_COPY_OUT_ODM)/firmware/explorer/sec_rtthread_nopm.bin \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/sec_rtthread_plat.bin:$(TARGET_COPY_OUT_ODM)/firmware/explorer/sec_rtthread_plat.bin \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/sec_rtthread_release.bin:$(TARGET_COPY_OUT_ODM)/firmware/explorer/sec_rtthread_release.bin \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/sec_rtthread_release_nopm.bin:$(TARGET_COPY_OUT_ODM)/firmware/explorer/sec_rtthread_release_nopm.bin \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/sec_sdi.bin:$(TARGET_COPY_OUT_ODM)/firmware/explorer/sec_sdi.bin \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/sec_sdi_crc.bin:$(TARGET_COPY_OUT_ODM)/firmware/explorer/sec_sdi_crc.bin \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/slt/ddr/ddr_first.bin:$(TARGET_COPY_OUT_ODM)/firmware/explorer/slt/ddr/ddr_first.bin \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/slt/ddr/ddr_first_c.bin:$(TARGET_COPY_OUT_ODM)/firmware/explorer/slt/ddr/ddr_first_c.bin \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/slt/ddr/ddr_first_diag_c.bin:$(TARGET_COPY_OUT_ODM)/firmware/explorer/slt/ddr/ddr_first_diag_c.bin \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/slt/ddr/ddr_first_diag_h.bin:$(TARGET_COPY_OUT_ODM)/firmware/explorer/slt/ddr/ddr_first_diag_h.bin \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/slt/ddr/ddr_first_diag_l.bin:$(TARGET_COPY_OUT_ODM)/firmware/explorer/slt/ddr/ddr_first_diag_l.bin \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/slt/ddr/ddr_first_diag_m.bin:$(TARGET_COPY_OUT_ODM)/firmware/explorer/slt/ddr/ddr_first_diag_m.bin \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/slt/ddr/ddr_first_h.bin:$(TARGET_COPY_OUT_ODM)/firmware/explorer/slt/ddr/ddr_first_h.bin \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/slt/ddr/ddr_first_l.bin:$(TARGET_COPY_OUT_ODM)/firmware/explorer/slt/ddr/ddr_first_l.bin \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/slt/ddr/ddr_first_m.bin:$(TARGET_COPY_OUT_ODM)/firmware/explorer/slt/ddr/ddr_first_m.bin \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/slt/ddr/ddr_quick.bin:$(TARGET_COPY_OUT_ODM)/firmware/explorer/slt/ddr/ddr_quick.bin \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/slt/idi_bp_config:$(TARGET_COPY_OUT_ODM)/firmware/explorer/slt/idi_bp_config \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/slt/isp/aon/isp_aon_L_0.raw:$(TARGET_COPY_OUT_ODM)/firmware/explorer/slt/isp/aon/isp_aon_L_0.raw \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/slt/isp/aon/isp_aon_L_1.raw:$(TARGET_COPY_OUT_ODM)/firmware/explorer/slt/isp/aon/isp_aon_L_1.raw \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/slt/isp/aon/isp_aon_L_2.raw:$(TARGET_COPY_OUT_ODM)/firmware/explorer/slt/isp/aon/isp_aon_L_2.raw \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/slt/isp/aon_hash.bin:$(TARGET_COPY_OUT_ODM)/firmware/explorer/slt/isp/aon_hash.bin \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/slt/isp/bayer/isp_bayer_L_0.raw:$(TARGET_COPY_OUT_ODM)/firmware/explorer/slt/isp/bayer/isp_bayer_L_0.raw \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/slt/isp/bayer/isp_bayer_L_1.raw:$(TARGET_COPY_OUT_ODM)/firmware/explorer/slt/isp/bayer/isp_bayer_L_1.raw \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/slt/isp/bayer/isp_bayer_L_2.raw:$(TARGET_COPY_OUT_ODM)/firmware/explorer/slt/isp/bayer/isp_bayer_L_2.raw \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/slt/isp/bayer/isp_bayer_M_0.raw:$(TARGET_COPY_OUT_ODM)/firmware/explorer/slt/isp/bayer/isp_bayer_M_0.raw \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/slt/isp/bayer/isp_bayer_M_1.raw:$(TARGET_COPY_OUT_ODM)/firmware/explorer/slt/isp/bayer/isp_bayer_M_1.raw \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/slt/isp/bayer/isp_bayer_M_2.raw:$(TARGET_COPY_OUT_ODM)/firmware/explorer/slt/isp/bayer/isp_bayer_M_2.raw \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/slt/isp/bayer/isp_bayer_S_0.raw:$(TARGET_COPY_OUT_ODM)/firmware/explorer/slt/isp/bayer/isp_bayer_S_0.raw \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/slt/isp/bayer/isp_bayer_S_1.raw:$(TARGET_COPY_OUT_ODM)/firmware/explorer/slt/isp/bayer/isp_bayer_S_1.raw \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/slt/isp/bayer/isp_bayer_S_2.raw:$(TARGET_COPY_OUT_ODM)/firmware/explorer/slt/isp/bayer/isp_bayer_S_2.raw \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/slt/isp/bayer_14b_hash.bin:$(TARGET_COPY_OUT_ODM)/firmware/explorer/slt/isp/bayer_14b_hash.bin \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/slt/isp/bayer_hash.bin:$(TARGET_COPY_OUT_ODM)/firmware/explorer/slt/isp/bayer_hash.bin \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/slt/isp/ncfa/isp_ncfa_L_0.raw:$(TARGET_COPY_OUT_ODM)/firmware/explorer/slt/isp/ncfa/isp_ncfa_L_0.raw \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/slt/isp/ncfa/isp_ncfa_L_1.raw:$(TARGET_COPY_OUT_ODM)/firmware/explorer/slt/isp/ncfa/isp_ncfa_L_1.raw \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/slt/isp/ncfa/isp_ncfa_L_2.raw:$(TARGET_COPY_OUT_ODM)/firmware/explorer/slt/isp/ncfa/isp_ncfa_L_2.raw \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/slt/isp/ncfa_hash.bin:$(TARGET_COPY_OUT_ODM)/firmware/explorer/slt/isp/ncfa_hash.bin \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/slt/isp/rgbw/isp_rgbw_L_0.raw:$(TARGET_COPY_OUT_ODM)/firmware/explorer/slt/isp/rgbw/isp_rgbw_L_0.raw \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/slt/isp/rgbw/isp_rgbw_L_1.raw:$(TARGET_COPY_OUT_ODM)/firmware/explorer/slt/isp/rgbw/isp_rgbw_L_1.raw \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/slt/isp/rgbw/isp_rgbw_L_2.raw:$(TARGET_COPY_OUT_ODM)/firmware/explorer/slt/isp/rgbw/isp_rgbw_L_2.raw \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/slt/isp/rgbw_hash.bin:$(TARGET_COPY_OUT_ODM)/firmware/explorer/slt/isp/rgbw_hash.bin \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/slt/isp/sn_bayer_hash.bin:$(TARGET_COPY_OUT_ODM)/firmware/explorer/slt/isp/sn_bayer_hash.bin \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/slt/isp/ud_bayer_hash.bin:$(TARGET_COPY_OUT_ODM)/firmware/explorer/slt/isp/ud_bayer_hash.bin \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/slt/npu/aon/sec_cmem.bin:$(TARGET_COPY_OUT_ODM)/firmware/explorer/slt/npu/aon/sec_cmem.bin \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/slt/npu/aon/sec_compiler.zmodel:$(TARGET_COPY_OUT_ODM)/firmware/explorer/slt/npu/aon/sec_compiler.zmodel \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/slt/npu/aon/sec_ddr_cmem.bin:$(TARGET_COPY_OUT_ODM)/firmware/explorer/slt/npu/aon/sec_ddr_cmem.bin \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/slt/npu/aon/sec_mmp.bin:$(TARGET_COPY_OUT_ODM)/firmware/explorer/slt/npu/aon/sec_mmp.bin \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/slt/npu/aon/sec_vsp_params.bin:$(TARGET_COPY_OUT_ODM)/firmware/explorer/slt/npu/aon/sec_vsp_params.bin \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/slt/npu/sn/sec_cmem.bin:$(TARGET_COPY_OUT_ODM)/firmware/explorer/slt/npu/sn/sec_cmem.bin \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/slt/npu/sn/sec_compiler.zmodel:$(TARGET_COPY_OUT_ODM)/firmware/explorer/slt/npu/sn/sec_compiler.zmodel \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/slt/npu/sn/sec_ddr_cmem.bin:$(TARGET_COPY_OUT_ODM)/firmware/explorer/slt/npu/sn/sec_ddr_cmem.bin \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/slt/npu/sn/sec_mmp.bin:$(TARGET_COPY_OUT_ODM)/firmware/explorer/slt/npu/sn/sec_mmp.bin \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/slt/npu/sn/sec_vsp_params.bin:$(TARGET_COPY_OUT_ODM)/firmware/explorer/slt/npu/sn/sec_vsp_params.bin \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/slt/npu/ud/sec_cmem.bin:$(TARGET_COPY_OUT_ODM)/firmware/explorer/slt/npu/ud/sec_cmem.bin \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/slt/npu/ud/sec_compiler.zmodel:$(TARGET_COPY_OUT_ODM)/firmware/explorer/slt/npu/ud/sec_compiler.zmodel \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/slt/npu/ud/sec_ddr_cmem.bin:$(TARGET_COPY_OUT_ODM)/firmware/explorer/slt/npu/ud/sec_ddr_cmem.bin \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/slt/npu/ud/sec_mmp.bin:$(TARGET_COPY_OUT_ODM)/firmware/explorer/slt/npu/ud/sec_mmp.bin \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/slt/npu/ud/sec_vsp_params.bin:$(TARGET_COPY_OUT_ODM)/firmware/explorer/slt/npu/ud/sec_vsp_params.bin \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/slt/se/se_fw.bin:$(TARGET_COPY_OUT_ODM)/firmware/explorer/slt/se/se_fw.bin \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/slt/se/se_header.bin:$(TARGET_COPY_OUT_ODM)/firmware/explorer/slt/se/se_header.bin \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/slt/sec_pbl_SLT_1st.bin:$(TARGET_COPY_OUT_ODM)/firmware/explorer/slt/sec_pbl_SLT_1st.bin \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/slt/sec_pbl_SLT_2nd.bin:$(TARGET_COPY_OUT_ODM)/firmware/explorer/slt/sec_pbl_SLT_2nd.bin \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/slt/sec_pbl_slt.bin:$(TARGET_COPY_OUT_ODM)/firmware/explorer/slt/sec_pbl_slt.bin \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/slt/sec_rtthread_aon_slt.bin:$(TARGET_COPY_OUT_ODM)/firmware/explorer/slt/sec_rtthread_aon_slt.bin \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/slt/sec_rtthread_slt.bin:$(TARGET_COPY_OUT_ODM)/firmware/explorer/slt/sec_rtthread_slt.bin \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/slt/sec_sdi.bin:$(TARGET_COPY_OUT_ODM)/firmware/explorer/slt/sec_sdi.bin \
+    vendor/oneplus/xueying/proprietary/odm/firmware/explorer/zeku_info.sh:$(TARGET_COPY_OUT_ODM)/firmware/explorer/zeku_info.sh \
     vendor/oneplus/xueying/proprietary/odm/firmware/fastchg/22899/charging_thermal_config_default.txt:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/22899/charging_thermal_config_default.txt \
     vendor/oneplus/xueying/proprietary/odm/firmware/fastchg/22899/charging_thermal_config_fold.txt:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/22899/charging_thermal_config_fold.txt \
     vendor/oneplus/xueying/proprietary/odm/firmware/se/goodix/cos_history:$(TARGET_COPY_OUT_ODM)/firmware/se/goodix/cos_history \
@@ -1336,6 +1460,8 @@ PRODUCT_PACKAGES += \
     com.oplus.node.sstabrealt \
     com.oplus.node.videoenhance \
     camera.oemlayer \
+    explorer.zeku \
+    vendor.zeku.hardware.explorer@1.0-impl \
     lib2DSlender \
     libAF \
     libAIEngine \
@@ -1346,6 +1472,7 @@ PRODUCT_PACKAGES += \
     libAncSegBaseSdk \
     libAncSegMultiSdk \
     libAncSegmentSdk \
+    libBasicTonePhoto \
     libBokehPre \
     libCOppLceTonemapAPI \
     libCS \
@@ -1384,6 +1511,7 @@ PRODUCT_PACKAGES += \
     libSnpeGpu \
     libSnpeHtpPrepare \
     libSnpeHtpV73Stub \
+    libStarMode \
     libSuperRaw \
     libSuperTextWrapper \
     libVDBayerHDR \
@@ -1401,6 +1529,7 @@ PRODUCT_PACKAGES += \
     libaecCustom \
     libaecCustomParamParser \
     libafCustomParamParser \
+    libaiboost_qnn_external_delegate_te \
     libaideblur \
     libaisal \
     libaisd \
@@ -1472,6 +1601,7 @@ PRODUCT_PACKAGES += \
     libdualcam_video_optical_zoom \
     libeffect_custom \
     libexif-jpeg-aps \
+    libexplorersdk \
     libextendfile \
     libextensionlayer \
     libgs_ese \
@@ -1501,6 +1631,7 @@ PRODUCT_PACKAGES += \
     libsnpe_loader \
     libsnpeml \
     libssd_det \
+    libstface_datas \
     libstface_fd_api \
     libstfd_mobile_api \
     libthirdcapability \
@@ -1520,6 +1651,7 @@ PRODUCT_PACKAGES += \
     vendor.oplus.hardware.secure_element-V1-ndk \
     vendor.oplus.hardware.sendextcamcmd-V1-service-impl \
     vendor.oplus.hardware.sendextcamcmd-V2-ndk \
+    vendor.zeku.hardware.explorer@1.0 \
     odm_lib_rfsa_adsp_libtfadsp_sb5_0_rx_so \
     odm_lib_rfsa_adsp_libtfadsp_sb5_0_tx_so \
     EuiccGoogle \
@@ -1532,6 +1664,7 @@ PRODUCT_PACKAGES += \
     manifest_oplus_sendextcamcmd.xml \
     manifest_secure_element.xml \
     manifest_vendor_goodix_secure_element.xml \
+    vendor.zeku.hardware.explorer@1.0-service.xml \
     vendor.qti.camera.provider-service_64 \
     android.hardware.secure_element@1.2-service-goodix \
     vendor.oplus.hardware.cammidasservice-V1-service
