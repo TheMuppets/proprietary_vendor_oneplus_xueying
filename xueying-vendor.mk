@@ -819,6 +819,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/xueying/proprietary/odm/etc/camera/tonemap/tonemap_lut_8:$(TARGET_COPY_OUT_ODM)/etc/camera/tonemap/tonemap_lut_8 \
     vendor/oneplus/xueying/proprietary/odm/etc/camera/tonemap/tonemap_lut_9:$(TARGET_COPY_OUT_ODM)/etc/camera/tonemap/tonemap_lut_9 \
     vendor/oneplus/xueying/proprietary/odm/etc/camera/wide.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/wide.bin \
+    vendor/oneplus/xueying/proprietary/odm/etc/init/android.hardware.secure_element@1.2-service-goodix.rc:$(TARGET_COPY_OUT_ODM)/etc/init/android.hardware.secure_element@1.2-service-goodix.rc \
     vendor/oneplus/xueying/proprietary/odm/etc/init/init.camera_process.rc:$(TARGET_COPY_OUT_ODM)/etc/init/init.camera_process.rc \
     vendor/oneplus/xueying/proprietary/odm/etc/init/init.camera_upate.rc:$(TARGET_COPY_OUT_ODM)/etc/init/init.camera_upate.rc \
     vendor/oneplus/xueying/proprietary/odm/etc/init/init.odm.camera.provider.override.rc:$(TARGET_COPY_OUT_ODM)/etc/init/init.odm.camera.provider.override.rc \
@@ -1029,6 +1030,20 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/xueying/proprietary/odm/etc/wifi/kiwi/regdb.bin:$(TARGET_COPY_OUT_ODM)/etc/wifi/kiwi/regdb.bin \
     vendor/oneplus/xueying/proprietary/odm/firmware/fastchg/22899/charging_thermal_config_default.txt:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/22899/charging_thermal_config_default.txt \
     vendor/oneplus/xueying/proprietary/odm/firmware/fastchg/22899/charging_thermal_config_fold.txt:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/22899/charging_thermal_config_fold.txt \
+    vendor/oneplus/xueying/proprietary/odm/firmware/se/goodix/cos_history:$(TARGET_COPY_OUT_ODM)/firmware/se/goodix/cos_history \
+    vendor/oneplus/xueying/proprietary/odm/firmware/se/oplus/applet_history:$(TARGET_COPY_OUT_ODM)/firmware/se/oplus/applet_history \
+    vendor/oneplus/xueying/proprietary/odm/firmware/se/oplus/oplus_bpf_script_install_appkey_manager_ver_01_00.210:$(TARGET_COPY_OUT_ODM)/firmware/se/oplus/oplus_bpf_script_install_appkey_manager_ver_01_00.210 \
+    vendor/oneplus/xueying/proprietary/odm/firmware/se/oplus/oplus_bpf_script_install_appkey_manager_ver_01_02.240:$(TARGET_COPY_OUT_ODM)/firmware/se/oplus/oplus_bpf_script_install_appkey_manager_ver_01_02.240 \
+    vendor/oneplus/xueying/proprietary/odm/firmware/se/oplus/oplus_bpf_script_install_bpf_key.50:$(TARGET_COPY_OUT_ODM)/firmware/se/oplus/oplus_bpf_script_install_bpf_key.50 \
+    vendor/oneplus/xueying/proprietary/odm/firmware/se/oplus/oplus_bpf_script_install_cryptokey_ver_00_01.100:$(TARGET_COPY_OUT_ODM)/firmware/se/oplus/oplus_bpf_script_install_cryptokey_ver_00_01.100 \
+    vendor/oneplus/xueying/proprietary/odm/firmware/se/oplus/oplus_bpf_script_install_face_ver_01_00.260:$(TARGET_COPY_OUT_ODM)/firmware/se/oplus/oplus_bpf_script_install_face_ver_01_00.260 \
+    vendor/oneplus/xueying/proprietary/odm/firmware/se/oplus/oplus_bpf_script_install_factory_test_ver_01_00.230:$(TARGET_COPY_OUT_ODM)/firmware/se/oplus/oplus_bpf_script_install_factory_test_ver_01_00.230 \
+    vendor/oneplus/xueying/proprietary/odm/firmware/se/oplus/oplus_bpf_script_install_find_device_ver_00_01.150:$(TARGET_COPY_OUT_ODM)/firmware/se/oplus/oplus_bpf_script_install_find_device_ver_00_01.150 \
+    vendor/oneplus/xueying/proprietary/odm/firmware/se/oplus/oplus_bpf_script_install_fingerprint_ver_01_00.200:$(TARGET_COPY_OUT_ODM)/firmware/se/oplus/oplus_bpf_script_install_fingerprint_ver_01_00.200 \
+    vendor/oneplus/xueying/proprietary/odm/firmware/se/oplus/oplus_bpf_script_install_fingerprint_ver_01_02.270:$(TARGET_COPY_OUT_ODM)/firmware/se/oplus/oplus_bpf_script_install_fingerprint_ver_01_02.270 \
+    vendor/oneplus/xueying/proprietary/odm/firmware/se/oplus/oplus_bpf_script_install_garbage_collection_ver_01_00.250:$(TARGET_COPY_OUT_ODM)/firmware/se/oplus/oplus_bpf_script_install_garbage_collection_ver_01_00.250 \
+    vendor/oneplus/xueying/proprietary/odm/firmware/se/oplus/oplus_bpf_script_install_oplus_amsd.75:$(TARGET_COPY_OUT_ODM)/firmware/se/oplus/oplus_bpf_script_install_oplus_amsd.75 \
+    vendor/oneplus/xueying/proprietary/odm/firmware/se/oplus/oplus_bpf_script_install_status_manager_ver_01_00.220:$(TARGET_COPY_OUT_ODM)/firmware/se/oplus/oplus_bpf_script_install_status_manager_ver_01_00.220 \
     vendor/oneplus/xueying/proprietary/odm/firmware/tfa98xx.cnt:$(TARGET_COPY_OUT_ODM)/firmware/tfa98xx.cnt \
     vendor/oneplus/xueying/proprietary/odm/firmware/tp/22003/FW_GT9916_BOE.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/22003/FW_GT9916_BOE.img \
     vendor/oneplus/xueying/proprietary/odm/firmware/tp/22003/FW_GT9916_BOE_FAE.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/22003/FW_GT9916_BOE_FAE.img \
@@ -1378,6 +1393,7 @@ PRODUCT_PACKAGES += \
     libWaterMark \
     libXDocProcessSDK \
     libYTCommon \
+    lib_oplus_selement_service \
     lib_rectify \
     libaecCustom \
     libaecCustomParamParser \
@@ -1451,6 +1467,7 @@ PRODUCT_PACKAGES += \
     libexif-jpeg-aps \
     libextendfile \
     libextensionlayer \
+    libgs_ese \
     libhwconfigurationutil \
     libhybridraw \
     libhybridsr_datas \
@@ -1493,6 +1510,7 @@ PRODUCT_PACKAGES += \
     vendor.oplus.hardware.camera_rfi-V1-service-impl \
     vendor.oplus.hardware.cameraextension-V1-service-impl \
     vendor.oplus.hardware.cammidasservice-V1-ndk \
+    vendor.oplus.hardware.secure_element-V1-ndk \
     vendor.oplus.hardware.sendextcamcmd-V1-service-impl \
     vendor.oplus.hardware.sendextcamcmd-V2-ndk \
     libtfadsp_sb5_0_rx \
@@ -1505,5 +1523,8 @@ PRODUCT_PACKAGES += \
     manifest_oplus_cameraextension_aidl.xml \
     manifest_oplus_cammidasservice_aidl.xml \
     manifest_oplus_sendextcamcmd.xml \
+    manifest_secure_element.xml \
+    manifest_vendor_goodix_secure_element.xml \
     vendor.qti.camera.provider-service_64 \
+    android.hardware.secure_element@1.2-service-goodix \
     vendor.oplus.hardware.cammidasservice-V1-service

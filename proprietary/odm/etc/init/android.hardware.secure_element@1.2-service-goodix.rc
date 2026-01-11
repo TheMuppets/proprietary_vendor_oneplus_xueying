@@ -1,0 +1,5 @@
+service hal_secure_element_oplus /odm/bin/hw/android.hardware.secure_element@1.2-service-goodix
+    # class early_hal cause AT^ESE_INIT_FLAG fail, because TEEC_OpenSession failed while set_initialized_flag function.
+    class hal
+    user system
+    group system readproc
