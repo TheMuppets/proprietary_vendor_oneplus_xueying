@@ -3048,6 +3048,13 @@
   "Type": "Int32",
   "Count": "1",
   "Value": "1"
+},
+
+{
+  "Key": "DISABLE_GAMMAY_FROM_CONFIG",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "1"
 }
 
 ]
