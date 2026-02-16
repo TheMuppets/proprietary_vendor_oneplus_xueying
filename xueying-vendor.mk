@@ -1513,8 +1513,8 @@ PRODUCT_PACKAGES += \
     vendor.oplus.hardware.secure_element-V1-ndk \
     vendor.oplus.hardware.sendextcamcmd-V1-service-impl \
     vendor.oplus.hardware.sendextcamcmd-V2-ndk \
-    libtfadsp_sb5_0_rx \
-    libtfadsp_sb5_0_tx \
+    odm_lib_rfsa_adsp_libtfadsp_sb5_0_rx_so \
+    odm_lib_rfsa_adsp_libtfadsp_sb5_0_tx_so \
     EuiccGoogle \
     vendor.qti.camera.aon-impl-1.3.xml \
     vendor.qti.camera.postproc-impl.xml \

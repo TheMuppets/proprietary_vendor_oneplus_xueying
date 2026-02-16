@@ -12476,7 +12476,7 @@ cc_prebuilt_library_shared {
 }
 
 prebuilt_rfsa {
-    name: "libtfadsp_sb5_0_rx",
+    name: "odm_lib_rfsa_adsp_libtfadsp_sb5_0_rx_so",
     filename: "libtfadsp_sb5_0_rx.so",
     owner: "oneplus",
     src: "proprietary/odm/lib/rfsa/adsp/libtfadsp_sb5_0_rx.so",
@@ -12485,7 +12485,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libtfadsp_sb5_0_tx",
+    name: "odm_lib_rfsa_adsp_libtfadsp_sb5_0_tx_so",
     filename: "libtfadsp_sb5_0_tx.so",
     owner: "oneplus",
     src: "proprietary/odm/lib/rfsa/adsp/libtfadsp_sb5_0_tx.so",
