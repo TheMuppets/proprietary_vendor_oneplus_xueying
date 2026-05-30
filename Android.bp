@@ -8675,7 +8675,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/libOPAlgoCamSinglePortrait.so",
             ],
             shared_libs: [
-                "libtrace",
                 "libSNPE",
                 "liblog",
                 "libz",
