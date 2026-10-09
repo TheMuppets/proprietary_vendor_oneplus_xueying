@@ -1672,3 +1672,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.camera.provider-service_64 \
     android.hardware.secure_element@1.2-service-goodix \
     vendor.oplus.hardware.cammidasservice-V1-service
+
+PRODUCT_COPY_FILES += \
+    vendor/oneplus/xueying/proprietary/odm/etc/temperature_profile/sys_thermal_control_config.xml:$(TARGET_COPY_OUT_ODM)/etc/temperature_profile/sys_thermal_control_config.xml \
+    vendor/oneplus/xueying/proprietary/vendor/etc/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf
