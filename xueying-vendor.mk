@@ -822,11 +822,13 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/xueying/proprietary/odm/etc/camera/tonemap/tonemap_lut_8:$(TARGET_COPY_OUT_ODM)/etc/camera/tonemap/tonemap_lut_8 \
     vendor/oneplus/xueying/proprietary/odm/etc/camera/tonemap/tonemap_lut_9:$(TARGET_COPY_OUT_ODM)/etc/camera/tonemap/tonemap_lut_9 \
     vendor/oneplus/xueying/proprietary/odm/etc/camera/wide.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/wide.bin \
+    vendor/oneplus/xueying/proprietary/odm/etc/dolby_vision.cfg:$(TARGET_COPY_OUT_ODM)/etc/dolby_vision.cfg \
     vendor/oneplus/xueying/proprietary/odm/etc/init/android.hardware.secure_element@1.2-service-goodix.rc:$(TARGET_COPY_OUT_ODM)/etc/init/android.hardware.secure_element@1.2-service-goodix.rc \
     vendor/oneplus/xueying/proprietary/odm/etc/init/hw/init.explorer.rc:$(TARGET_COPY_OUT_ODM)/etc/init/hw/init.explorer.rc \
     vendor/oneplus/xueying/proprietary/odm/etc/init/init.camera_process.rc:$(TARGET_COPY_OUT_ODM)/etc/init/init.camera_process.rc \
     vendor/oneplus/xueying/proprietary/odm/etc/init/init.camera_upate.rc:$(TARGET_COPY_OUT_ODM)/etc/init/init.camera_upate.rc \
     vendor/oneplus/xueying/proprietary/odm/etc/init/init.odm.camera.provider.override.rc:$(TARGET_COPY_OUT_ODM)/etc/init/init.odm.camera.provider.override.rc \
+    vendor/oneplus/xueying/proprietary/odm/etc/init/vendor.dolby.media.dvs-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.dolby.media.dvs-service.rc \
     vendor/oneplus/xueying/proprietary/odm/etc/init/vendor.oplus.hardware.cammidasservice-V1-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.cammidasservice-V1-service.rc \
     vendor/oneplus/xueying/proprietary/odm/etc/lvacfs_params/2mic/LVACFS_Calibration360_2mic.dat:$(TARGET_COPY_OUT_ODM)/etc/lvacfs_params/2mic/LVACFS_Calibration360_2mic.dat \
     vendor/oneplus/xueying/proprietary/odm/etc/lvacfs_params/2mic/LVACFS_Configuration.txt:$(TARGET_COPY_OUT_ODM)/etc/lvacfs_params/2mic/LVACFS_Configuration.txt \
@@ -1272,6 +1274,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/xueying/proprietary/vendor/etc/ltm_config_AC052_P_1_A0002_dsc_cmd_mode_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ltm_config_AC052_P_1_A0002_dsc_cmd_mode_panel.xml \
     vendor/oneplus/xueying/proprietary/vendor/etc/ltm_config_AC052_P_3_A0003_dsc_cmd_mode_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ltm_config_AC052_P_3_A0003_dsc_cmd_mode_panel.xml \
     vendor/oneplus/xueying/proprietary/vendor/etc/ltm_config_AC052_S_3_A0001_dsc_cmd_mode_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ltm_config_AC052_S_3_A0001_dsc_cmd_mode_panel.xml \
+    vendor/oneplus/xueying/proprietary/vendor/etc/media_codecs_dolby_vision.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_dolby_vision.xml \
     vendor/oneplus/xueying/proprietary/vendor/firmware/sn220u.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/sn220u.bin \
     vendor/oneplus/xueying/proprietary/vendor/lib64/camera/arcsoft_calibration_uw.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/arcsoft_calibration_uw.bin \
     vendor/oneplus/xueying/proprietary/vendor/lib64/camera/arcsoft_calibration_wt.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/arcsoft_calibration_wt.bin \
@@ -1652,6 +1655,7 @@ PRODUCT_PACKAGES += \
     libyuv2 \
     libyuvwrapper \
     libziparchive_odm \
+    vendor.dolby.dvs@1.0 \
     vendor.oplus.hardware.camera_rfi-V1-service-impl \
     vendor.oplus.hardware.cameraextension-V1-service-impl \
     vendor.oplus.hardware.sendextcamcmd-V1-service-impl \
@@ -1668,9 +1672,11 @@ PRODUCT_PACKAGES += \
     manifest_oplus_sendextcamcmd.xml \
     manifest_secure_element.xml \
     manifest_vendor_goodix_secure_element.xml \
+    vendor.dolby.media.dvs-service.xml \
     vendor.zeku.hardware.explorer@1.0-service.xml \
     vendor.qti.camera.provider-service_64 \
     android.hardware.secure_element@1.2-service-goodix \
+    dvs-hal-service \
     vendor.oplus.hardware.cammidasservice-V1-service
 
 PRODUCT_COPY_FILES += \
