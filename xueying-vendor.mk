@@ -1681,4 +1681,5 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     vendor/oneplus/xueying/proprietary/odm/etc/temperature_profile/sys_thermal_control_config.xml:$(TARGET_COPY_OUT_ODM)/etc/temperature_profile/sys_thermal_control_config.xml \
+    vendor/oneplus/xueying/proprietary/vendor/etc/charger_cool_down.conf:$(TARGET_COPY_OUT_VENDOR)/etc/charger_cool_down.conf \
     vendor/oneplus/xueying/proprietary/vendor/etc/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf
